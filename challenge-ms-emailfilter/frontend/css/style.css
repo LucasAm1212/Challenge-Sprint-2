@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  font-family: "Roboto", sans-serif;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Estilos da tela Home */
+main.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.link {
+  background: #dedede;
+  color: #8c928f;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 0.25rem;
+  transition: 0.3s;
+  padding: 1.25rem;
+  width: 350px;
+}
+
+.link:hover {
+  background: #cccccc;
+}
+
+.link.main {
+  background: #17b2ff;
+  color: #00306f;
+}
+
+.link.main:hover {
+  background: #119fe6;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.checkpoint {
+  color: #ddd;
+  margin-bottom: 0.5rem;
+}
+
+.name {
+  color: #9a9a9a;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* Estilos da listagem de produtos */
+main.product-list {
+  padding: 4rem;
+}
+
+.title {
+  color: #606060;
+  margin-bottom: 2rem;
+}
+
+.product-list .table tr {
+  grid-template-columns: 4rem 2fr 1fr 1fr;
+}
+
+/* Estilos da cadastro de produtos */
+main.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.product-form {
+  width: 100%;
+  max-width: 600px;
+}
+
+.label-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  color: #606060;
+  margin-bottom: 1rem;
+}
+
+.label-form:last-of-type {
+  margin-bottom: 2rem;
+}
+
+.label-form input {
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  border-radius: 0.25rem;
+  padding: 0.75rem 1rem;
+}
+
+.label-form input:focus {
+  outline-color: #aaa;
+}
+
+.send-button {
+  background: #17b2ff;
+  color: #00306f;
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  border: 2px solid #17b2ff;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: 0.3s;
+  padding: 0.75rem 0;
+  width: 150px;
+}
+
+.send-button:hover {
+  background: #119fe6;
+}
+
+/* Estilos da listagem de e-mails */
+main.email-list {
+  padding: 4rem;
+}
+
+.header .title {
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.date-filter-form input {
+  color: #555;
+  border: 1px solid #aaa;
+  border-radius: 0.25rem;
+  padding: 0.5rem 1rem;
+}
+
+.date-filter-form button {
+  padding: 0.5rem 1rem;
+}
+
+/* Estilos de table */
+.table {
+  text-align: left;
+  width: 100%;
+}
+
+.table thead {
+  display: block;
+  background: #ddd;
+  color: #555;
+  letter-spacing: 0.05rem;
+  border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.table tbody {
+  display: block;
+  color: #444;
+  font-size: 0.875rem;
+  border: 1px solid #eee;
+  border-top-width: 0;
+}
+
+.table tr {
+  display: grid;
+  grid-template-columns: 4rem 1fr 1fr 1fr 2fr 0.5fr;
+  gap: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+.table th:not(:last-of-type),
+.table td:not(:last-of-type) {
+  border-right: 1px solid #bbb;
+}
+
+.table td {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 1rem;
+}
